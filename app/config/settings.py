@@ -143,8 +143,10 @@ DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 DATA_UPLOAD_MAX_NUMBER_FILES = 10
 
 # Configure storage
-if DEBUG:
+if not os.environ.get('AWS_ACCESS_KEY_ID') or DEBUG:
     print("In DEBUG mode, using FileSystemStorage with whitenoise for static files")
+    print("With CDN caching, whitenoise should be used in production too.")
+    print("Consider updating our pulumi to deploy acloudfront distribution instead of a bucket.")
     
     # Whitenoise configuration
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
