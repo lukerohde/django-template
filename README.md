@@ -28,7 +28,7 @@ make help
    brew install --cask xquartz
    ```
    
-see [x11 on docker](https://gist.github.com/cschiewek/246a244ba23da8b9f0e7b11a68bf3285)
+2. follow [x11 on docker](https://gist.github.com/cschiewek/246a244ba23da8b9f0e7b11a68bf3285)
 
 
 3. Run headed Playwright tests:
