@@ -34,6 +34,10 @@ test: docker-up
 test-headed: docker-up
 	docker-compose exec app pytest --headed
 
+# Run playwright tests in debug mode
+test-debug: docker-up
+	PWDEBUG=1 docker-compose exec app pytest --headed
+
 # Build npm assets
 npm-dev: docker-up
 	docker-compose exec app npm run dev
@@ -63,6 +67,7 @@ help:
 	@echo "  build       - Build Docker containers"
 	@echo "  test        - Run test suite"
 	@echo "  test-headed - Run playwright tests in headed mode"
+	@echo "  test-debug  - Run playwright tests in interactive debug mode"
 	@echo "  npm-dev     - Start npm in development mode"
 	@echo "  npm-build   - Build npm assets"
 	@echo "  docker-up   - Start Docker containers"
