@@ -15,8 +15,8 @@ make dev
 ```
 
 Sign in 
-1. your username and password are in .env
-2. localhost:3000
+1. http://localhost:3000
+2. your username and password are in .env
 
 To see how to run other stuff
 
