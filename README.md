@@ -14,6 +14,10 @@ Start developing
 make dev
 ```
 
+Sign in 
+1. your username and password are in .env
+2. localhost:3000
+
 To see how to run other stuff
 
 ```
