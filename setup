@@ -90,6 +90,5 @@ docker-compose run --rm app /bin/bash -c "python manage.py createsuperuser --noi
 
 echo ""
 echo ""
-echo "to run your server, run 'make run-server'"
-echo "to dev 'make npm-dev & make run-server'"
-echo "see 'make help'"
+echo "to run your server in development mode run 'make dev'"
+echo "for other options see 'make help'"
