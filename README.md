@@ -18,6 +18,4 @@ make help
 
 For more detailed instructions, please refer to the following README files:
 
-- [Deploy to AWS](deploy-aws-infra/pulumi/README.md)
 - [Deploy to Render](deploy-render/README.md)
-- [Deploy to Digital Ocean](deploy-do/README.md)
